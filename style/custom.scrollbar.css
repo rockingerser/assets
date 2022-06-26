@@ -1,0 +1,22 @@
+:root {
+	--scrollbar-size: 5px;
+	--scrollbar-color: #777;
+}
+html {
+	scrollbar-width: thin;
+	scrollbar-color: var(--scrollbar-color);
+}
+::-webkit-scrollbar {
+	width: var(--scrollbar-size);
+	height: var(--scrollbar-size);
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-color);
+	border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #999;
+}
